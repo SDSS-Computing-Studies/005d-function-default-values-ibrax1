@@ -25,4 +25,5 @@ def sentence(greeting, name = "Benjamin", question = "How are you"):
 meeting = "Hellooo"
 result = sentence(greeting = meeting)
 
-print(result)
+assert sentence("Hello") == "Hello Benjamin. How are you"
+assert sentence("Hiya","Casey","Have you enjoyed your meal") == "Hiya Casey. Have you enjoyed your meal"
